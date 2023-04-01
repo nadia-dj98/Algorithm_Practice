@@ -39,3 +39,16 @@ console.log(accumulatedValues);
 const accumulatedVals2 = values.filter((value) => value > 0).reduce((accumulator, currentValue) => accumulator + currentValue,0) 
 
 console.log(accumulatedVals2)
+
+
+//Calculate median and mean
+//Calculate the mean and median values 
+//of the number elements from the input array.
+
+const numbers = [12, 46, 32, 64];
+
+//mean
+const mean = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0) / numbers.length
+
+console.log(mean)
+
