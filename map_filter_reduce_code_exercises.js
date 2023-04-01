@@ -15,3 +15,27 @@ const squareVals2 = input.map(function(num) {
 })
 
  console.log(squareVals2)
+
+
+//sum of every positive element
+//If the given input is an array of numbers, return the sum of all the positives ones. 
+//If the array is empty or there aren't any positive numbers, return 0.
+
+const values = [1, -4, 12, 0, -3, 29, -150];
+
+
+//first filter the array to only have postive elements/numbers
+
+const positiveValues = values.filter(value => value > 0);
+
+//then accumulate the numners using reduce method
+
+const accumulatedValues = positiveValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log(accumulatedValues);
+
+//shorter way to reduce code
+
+const accumulatedVals2 = values.filter((value) => value > 0).reduce((accumulator, currentValue) => accumulator + currentValue,0) 
+
+console.log(accumulatedVals2)
